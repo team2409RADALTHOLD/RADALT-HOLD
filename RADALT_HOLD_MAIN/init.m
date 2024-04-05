@@ -15,8 +15,10 @@ Ts = 0.02;
 %--------------------------%
 %-- ALTIMETER PARAMETERS --%
 %--------------------------%
-Alt_max = 0.50;  % in cm
-Alt_min = 0;     % in cm
+Alt_max = 5000;     % in cm
+Alt_min = 0.5;      % in cm
+Rate_max = 50;      % in cm/s
+Rate_min = -50;     % in cm/s
 %--------------------------%
 
 %--------------------------%
@@ -31,10 +33,12 @@ Voter_Lower_Bound = 0.85; % 85 percent
 %--------------------------%
 %Filtering parameters should 
 % be based on SNR calculations
-%Passband frequency input
-Passband_Lowpass = 50; %hz
-%Stopband frequency input
-Stopband_Lowpass = 100; %hz
+%Passband edge frequency input
+Passband_Edge_Lowpass = 1; %hz
+%Stopband edge frequency input
+Stopband_Edge_Lowpass = 10; %hz
+%Input sample rate
+SampleRate = 100; %hz
 %--------------------------%
 
 %--------------------------%
